@@ -12,7 +12,7 @@
 			
 			<div>
 				<label for="full-name">Full Name</label>
-				<input type="text" id="full-name" required>
+				<input type="text" id="full-name" required placeholder="Bruce Wayne">
 			</div>
 
 			<div>
@@ -27,7 +27,7 @@
 
 			<div>
 				<label for="website">Your website</label>
-				<input type="url" id="website">
+				<input type="url" id="website" required value="http://">
 			</div>
 
 			<div>
@@ -38,6 +38,54 @@
 			<div>
 				<label for="date">Check-in</label>
 				<input type="date" id="date">
+			</div>
+
+			<div>
+				<label for="country">Your Country</label>
+				<select name="country" id="country">
+					<option value="">Please select...</option>
+					<optgroup label="Oceania">
+						<option value="nz">New Zealand</option>
+						<option value="au">Australia</option>
+					</optgroup>
+					<optgroup label="Other">
+						<option value="usa">United States of America</option>
+					</optgroup>
+				</select>
+			</div>
+
+			<div>
+				<input type="radio" id="male" name="gender">
+				<label for="male">Male</label>
+			</div>
+
+			<div>
+				<input type="radio" id="female" name="gender">
+				<label for="female">Female</label>
+			</div>
+
+			<div>
+				<input type="radio" id="other" name="gender">
+				<label for="other">Other</label>
+			</div>
+
+			<div>
+				<input type="checkbox" id="remember" checked>
+				<label for="remember">Remember login</label>
+			</div>
+
+			<div>
+				<label for="post">Blog post</label>
+				<textarea name="post" id="post" cols="30" rows="10"></textarea>
+			</div>
+
+			<div>
+				<label for="search">Search</label>
+				<input type="search" id="search">
+			</div>
+
+			<div>
+				<progress max="100" value="70"></progress>
 			</div>
 
 			<input type="submit">
